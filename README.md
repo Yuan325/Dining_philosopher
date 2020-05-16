@@ -2,7 +2,7 @@
 Solution for the Dining Philosopher problem using pthread_mutex locks and condition variables.
 
 
-#The Philosophers
+# The Philosophers
 
   Begin by creating five philosophers, each identified by a number 0 . . 4. Each philosopher will run as a separate thread. Thread creation using Pthreads is covered in Section 4.4.1. Philosophers alternate between thinking and eating. To simulate both activities, have the thread sleep() for a random period between one and three seconds. When a philosopher wishes to eat, she invokes the function
 
@@ -12,7 +12,7 @@ Solution for the Dining Philosopher problem using pthread_mutex locks and condit
 
           return_forks(int philosopher_number)
 
-#Pthreads Condition Variables
+# Pthreads Condition Variables
 
   Condition variables in Pthreads behave similarly to those described in Section 5.8. However, in that section, condition variables are used within the context of a monitor, which provides a locking mechanism to ensure data integrity. Since Pthreads is typically used in C programs — and since C does not have a monitor — we accomplish locking by associating a condition variable with a mutex lock. Pthreads mutex locks are covered in Section 5.9.4. We cover Pthreads condition variables here.
 
